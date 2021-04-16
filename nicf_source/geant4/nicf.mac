@@ -1,0 +1,20 @@
+# Launch Cf decay events in NiCf source.
+
+# Set the detector geometry parameters.
+/NiCf/detector/sourceRadius 7.0 cm
+/NiCf/detector/worldRadius  8.0 cm
+/NiCf/detector/massFractionNiO 0.65
+/NiCf/detector/massFractionPoly 0.35
+
+/run/initialize
+
+# Set the ntuple file name.
+/analysis/ntuple/setFileName 0 nicf_source_ntuple
+
+# Set up the 252Cf decay.
+/gun/particle ion
+/gun/ion 98 252
+/tracking/verbose 2
+
+# Run.
+/run/beamOn 1000
