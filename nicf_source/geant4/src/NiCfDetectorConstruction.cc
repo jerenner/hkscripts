@@ -55,8 +55,6 @@ NiCfDetectorConstruction::~NiCfDetectorConstruction()
 G4VPhysicalVolume* NiCfDetectorConstruction::Construct()
 {
 
-  fWorldRadius = 10.*cm;
-
   G4bool checkOverlaps = true;
 
   // Construct materials
