@@ -92,7 +92,7 @@ void NiCfEventAction::EndOfEventAction(const G4Event* event)
       analysisManager->FillNtupleDColumn(15,momentumInit[2]);
       analysisManager->FillNtupleDColumn(16,momentumFinal[0]);
       analysisManager->FillNtupleDColumn(17,momentumFinal[1]);
-      analysisManager->FillNtupleDColumn(18,momentumInit[2]);
+      analysisManager->FillNtupleDColumn(18,momentumFinal[2]);
       analysisManager->FillNtupleSColumn(19,tr->GetInitialVolume());
       analysisManager->FillNtupleSColumn(20,tr->GetFinalVolume());
 
